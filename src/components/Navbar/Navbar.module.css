@@ -1,0 +1,17 @@
+@import '../../../vars.css';
+
+.NavbarContainer{
+    margin-top: 0px;
+    background-color: yellow;
+}
+
+.navbarImage{
+    background-color: red;
+    height: 100px;
+}
+
+.navbarImage img{
+    margin: 0% 2%;
+    height: 70px;
+    width: auto;
+}
