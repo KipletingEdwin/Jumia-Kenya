@@ -1,11 +1,13 @@
 import styles from './Navbar.module.css';
-import NavbarGif from '../../assets/nav/navbar.gif'
+// import NavbarGif from '../../assets/nav/navbar.gif'
+// import freeDelivery from '../../assets/nav/freeDelivery.gif';
+import freeDelivery1 from '../../assets/nav/freedelivery1.gif';
 
 function Navbar() {
   return (
-    <div className={styles.NavbarContainer}>
+    <div className={styles.container}>
         <div className={styles.navbarImage}>
-          <img src={NavbarGif} alt='navbar-gif'/>
+          <img src={freeDelivery1} alt='navbar-gif'/>
         </div>
       
     </div>

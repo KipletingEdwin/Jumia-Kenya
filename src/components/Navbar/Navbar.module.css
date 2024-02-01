@@ -1,17 +1,20 @@
 @import '../../../vars.css';
 
-.NavbarContainer{
-    margin-top: 0px;
-    background-color: yellow;
+.container{
+    width: 100%;
+    height: 100%;
 }
 
 .navbarImage{
-    background-color: red;
-    height: 100px;
+    background-color: #FF9900;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbarImage img{
-    margin: 0% 2%;
-    height: 70px;
-    width: auto;
+    width: 40%;
+    
+    
 }
