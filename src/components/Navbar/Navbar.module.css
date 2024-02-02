@@ -24,7 +24,21 @@
 
 .firstIcon{
     background-color: green;
-    height: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.firstIcon img{
+    height: 15px;
+    width: 15px;
+    margin-left: 3%;
+    margin-top: 8px;
+}
+
+.firstIcon a{
+    color: #f68b1e;
+    font-size: 12px;
 }
 
 .search{
