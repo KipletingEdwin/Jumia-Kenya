@@ -53,10 +53,17 @@ function Navbar() {
               />
             </div>
             <button className={styles.searchButton}>SEARCH</button>
-            <div className={styles.account} onClick={() =>setIsChevronDown(!isChevronDown)}>
+            <div className={`${styles.account} ${isChevronDown ? '': styles.upHover}`} onClick={() =>setIsChevronDown(!isChevronDown)}>
             <FontAwesomeIcon icon={faUserLarge} className={styles.faUserLarge} />
             <p>Account</p>
             <FontAwesomeIcon icon={isChevronDown ? faChevronDown : faChevronUp} className={styles.faChevronDown} />
+            {!isChevronDown && (
+              <div className={styles.additionalItems}>
+                <a href='/signIn' className={styles.signIn}>SIGN IN</a>
+                <a href='/myAccount' ><FontAwesomeIcon icon={faUserLarge} /><p>My Account</p></a>
+
+              </div>
+            )}
 
 
             {/* <FontAwesomeIcon icon={faCircleQuestion} /> */}

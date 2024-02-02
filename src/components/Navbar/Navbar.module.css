@@ -153,3 +153,16 @@
 .account:hover p{
     color: #f68b1e;
 }
+
+
+.upHover:hover .faUserLarge{
+    color: #fff;
+}
+
+.upHover:hover .faChevronDown{
+    color: #fff;
+}
+
+.upHover:hover p{
+    color: #fff;
+}
