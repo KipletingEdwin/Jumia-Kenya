@@ -19,7 +19,7 @@
 }
 
 .iconsContainer{
-    background-color:yellow;
+    background-color: #f1f1f2;
     height: 300px;
 }
 
@@ -57,13 +57,13 @@
 }
 
 .search{
-    background-color: red;
+    background-color: #ffffff;
     height: 72px;
     width: 100%;
 }
 
 .innerContainer{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     padding: 10px 20px;
     width: 100%;
     display: flex;
@@ -123,16 +123,16 @@
 
 .faUserLarge{
     height: 20px;
-    color: white;
+    color: black;
     margin: 5px;
 }
 
 .faChevronDown{
-    color: white;
+    color: black;
 }
 
 .account p{
-    color: white;
+    color: black;
     padding-top: 20px;
     font-size: 16px;
     font-family: "Roboto",Arial, Helvetica, sans-serif;
@@ -156,13 +156,17 @@
 
 
 .upHover:hover .faUserLarge{
-    color: #fff;
+    background-color: #d4d4d6;
 }
 
 .upHover:hover .faChevronDown{
-    color: #fff;
+    background-color: #d4d4d6;
 }
 
 .upHover:hover p{
-    color: #fff;
+    background-color: #d4d4d6;
+}
+
+.upHover:hover{
+    background-color: #d4d4d6;
 }
