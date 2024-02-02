@@ -46,6 +46,7 @@ function Navbar() {
                 placeholder="Search products,brands and categories"
               />
             </div>
+            <button className={styles.searchButton}>SEARCH</button>
           </div>
         </div>
       </div>
