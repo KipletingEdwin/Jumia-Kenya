@@ -11,7 +11,8 @@ function Navbar() {
       </div>
       <div className={styles.iconsContainer}>
         <div className={styles.firstIcon}>
-          <a href="/"><img src={jumiaIcon} alt="jumia-icon"/>Sell on Jumia</a>
+          <a href="/"><img src={jumiaIcon} alt="jumia-icon" className={styles.jumiaIcon1} />Sell on Jumia</a>
+          <img src={jumiakenya} alt="jumiaIcon" className={styles.jumiaIcon2} />
         </div>
         <div className={styles.search}>
           <div className={styles.innerContainer}>

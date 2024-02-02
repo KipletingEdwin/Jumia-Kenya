@@ -27,18 +27,26 @@
     height: 30px;
     display: flex;
     align-items: center;
-}
-
-.firstIcon img{
-    height: 15px;
-    width: 15px;
-    margin-left: 3%;
-    margin-top: 8px;
+    width: 100%;
 }
 
 .firstIcon a{
     color: #f68b1e;
     font-size: 12px;
+}
+
+.jumiaIcon1{
+    height: 15px;
+    width: auto;
+    margin-left: 3%;
+    margin-top: 8px;
+}
+
+.jumiaIcon2{
+    height: 20px;
+    width: auto;
+    margin-left: -70%;
+
 }
 
 .search{
@@ -53,5 +61,5 @@
 
 .innerContainer img{
     height: 27px;
-    width: 15%;
+    width: auto;
 }
