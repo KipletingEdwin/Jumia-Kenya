@@ -15,6 +15,7 @@
 
 .navbarImage img{
     width: 40%;
+    height: auto;
 }
 
 .iconsContainer{
@@ -23,7 +24,7 @@
 }
 
 .firstIcon{
-    background-color: green;
+    background-color: aliceblue;
     height: 30px;
     display: flex;
     align-items: center;
@@ -43,23 +44,51 @@
 }
 
 .jumiaIcon2{
-    height: 20px;
+    height: 15px;
     width: auto;
-    margin-left: -70%;
+    margin-left: -60%;
 
+}
+
+.pay{
+    height: 25px;
+    width: auto;
+    margin-left: 10%;
 }
 
 .search{
     background-color: red;
-    height: 100px;
+    height: 72px;
+    width: 100%;
 }
 
 .innerContainer{
     background-color: blueviolet;
     padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .innerContainer img{
     height: 27px;
     width: auto;
+}
+
+.searchBar{
+    width: 50%;
+    height: 50px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+}
+
+.searchbarIcon{
+    height: 25px;
+    width: auto;
+}
+
+.searchBar input{
+    height: 100%;
+    border: none;
 }
