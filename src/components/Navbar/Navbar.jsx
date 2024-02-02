@@ -1,4 +1,7 @@
+import React, {useState} from 'react';
 import styles from "./Navbar.module.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserLarge, faChevronDown, faChevronUp, faCircleQuestion, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import freeDelivery1 from "../../assets/nav/freedelivery1.gif";
 import jumiakenya from "../../assets/nav/jumia.png";
 import jumiaIcon from "../../assets/nav/jumiaIcon.png";
@@ -6,6 +9,9 @@ import pay from "../../assets/nav/pay.png";
 import searchIcon from "../../assets/nav/searchIcon.png";
 
 function Navbar() {
+  const [isChevronDown, setIsChevronDown] = useState(true);
+
+
   return (
     <div className={styles.container}>
       {/* The first div containing Free delivery gifs  */}
@@ -47,6 +53,17 @@ function Navbar() {
               />
             </div>
             <button className={styles.searchButton}>SEARCH</button>
+            <div className={styles.account} onClick={() =>setIsChevronDown(!isChevronDown)}>
+            <FontAwesomeIcon icon={faUserLarge} className={styles.faUserLarge} />
+            <p>Account</p>
+            <FontAwesomeIcon icon={isChevronDown ? faChevronDown : faChevronUp} className={styles.faChevronDown} />
+
+
+            {/* <FontAwesomeIcon icon={faCircleQuestion} /> */}
+            {/* <FontAwesomeIcon icon={faChevronDown} /> */}
+            {/* <FontAwesomeIcon icon={faCartShopping} /> */}
+
+            </div>
           </div>
         </div>
       </div>
