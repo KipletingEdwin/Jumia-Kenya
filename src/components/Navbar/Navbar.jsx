@@ -9,6 +9,7 @@ import pay from "../../assets/nav/pay.png";
 import searchIcon from "../../assets/nav/searchIcon.png";
 
 function Navbar() {
+  // State to manage the visibility of additional account items
   const [isChevronDown, setIsChevronDown] = useState(true);
 
 
@@ -57,7 +58,7 @@ function Navbar() {
             {/* Account icon */}
             <div className={`${styles.account} ${isChevronDown ? '': styles.upHover}`} onClick={() =>setIsChevronDown(!isChevronDown)}>
             <FontAwesomeIcon icon={faUserLarge} className={styles.faUserLarge} />
-            <p>Account</p>
+            <p className={styles.accountParagraph}>Account</p>
             <FontAwesomeIcon icon={isChevronDown ? faChevronDown : faChevronUp} className={styles.faChevronDown} />
             {!isChevronDown && (
               <div className={styles.additionalItems}>
