@@ -155,20 +155,29 @@
 }
 
 
-/* .upHover:hover .faUserLarge{
-    background-color: #d4d4d6;
+.upHover:hover .faUserLarge{
+    background-color: #fff;
+    color: black;
 }
 
 .upHover:hover .faChevronDown{
-    background-color: #d4d4d6;
+    background-color: #fff;
+    color: black;
 }
 
 .upHover:hover p{
-    background-color: #d4d4d6;
-} */
+    background-color: red;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 3px;
+    padding-bottom: 0px;
+    font-size: 16px;
+    
+}
 
 .upHover:hover{
-    background-color: #d4d4d6;
+    background-color: #fff;
+    color: black;
 }
 
 .additionalItems{
