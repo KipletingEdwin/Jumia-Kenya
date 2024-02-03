@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styles from "./Navbar.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserLarge, faChevronDown, faChevronUp, faCircleQuestion, faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { faUserLarge, faChevronDown, faChevronUp, faHeart,faBox, faCircleQuestion, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import freeDelivery1 from "../../assets/nav/freedelivery1.gif";
 import jumiakenya from "../../assets/nav/jumia.png";
 import jumiaIcon from "../../assets/nav/jumiaIcon.png";
@@ -53,6 +53,8 @@ function Navbar() {
               />
             </div>
             <button className={styles.searchButton}>SEARCH</button>
+
+            {/* Account icon */}
             <div className={`${styles.account} ${isChevronDown ? '': styles.upHover}`} onClick={() =>setIsChevronDown(!isChevronDown)}>
             <FontAwesomeIcon icon={faUserLarge} className={styles.faUserLarge} />
             <p>Account</p>
@@ -61,6 +63,8 @@ function Navbar() {
               <div className={styles.additionalItems}>
                 <a href='/signIn' className={styles.signIn}>SIGN IN</a>
                 <a href='/myAccount' ><FontAwesomeIcon icon={faUserLarge} /><p>My Account</p></a>
+                <a href='/orders'><FontAwesomeIcon icon={faBox} />Orders</a>
+                <a href='/saved'><FontAwesomeIcon icon={faHeart} />Saved Items</a>
 
               </div>
             )}
