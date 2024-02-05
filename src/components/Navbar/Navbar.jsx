@@ -63,9 +63,9 @@ function Navbar() {
             {!isChevronDown && (
               <div className={styles.additionalItems}>
                 <a href='/signIn' className={styles.signIn}>SIGN IN</a>
-                <a href='/myAccount' ><FontAwesomeIcon icon={faUserLarge} />My Account</a>
-                <a href='/orders'><FontAwesomeIcon icon={faBox} />Orders</a>
-                <a href='/saved'><FontAwesomeIcon icon={faHeart} />Saved Items</a>
+                <a href='/myAccount' className={styles.myAccount} ><FontAwesomeIcon icon={faUserLarge} />My Account</a>
+                <a href='/orders'className={styles.myAccount} ><FontAwesomeIcon icon={faBox} /><p>Orders</p></a>
+                <a href='/saved'className={styles.myAccount} ><FontAwesomeIcon icon={faHeart} />Saved Items</a>
 
               </div>
             )}

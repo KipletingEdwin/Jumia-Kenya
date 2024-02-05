@@ -250,5 +250,11 @@
     justify-content: center;
     padding: 12px 16px;
     cursor: pointer;
+    width: 73%;
+
+}
+
+.myAccount{
+    background-color: red;
 
 }
