@@ -11,6 +11,15 @@ import searchIcon from "../../assets/nav/searchIcon.png";
 function Navbar() {
   // State to manage the visibility of additional account items
   const [isChevronDown, setIsChevronDown] = useState(true);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(true);
+
+  const handleDropdownClick = () => {
+    setIsDropdownOpen(!isDropdownOpen); //Toggle chevron state
+  };
+
+  const handleChevronClick = () => {
+    setIsChevronDown(!isChevronDown);
+  };
 
 
   return (
@@ -56,7 +65,7 @@ function Navbar() {
             <button className={styles.searchButton}>SEARCH</button>
 
             {/* Account icon */}
-            <div className={`${styles.account} ${isChevronDown ? '': styles.upHover}`} onClick={() =>setIsChevronDown(!isChevronDown)}>
+            <div className={`${styles.account} ${isChevronDown ? '': styles.upHover}`} onClick={handleChevronClick}>
             <FontAwesomeIcon icon={faUserLarge} className={styles.faUserLarge} />
             <p className={styles.accountParagraph}>Account</p>
             <FontAwesomeIcon icon={isChevronDown ? faChevronDown : faChevronUp} className={styles.faChevronDown} />
@@ -70,12 +79,7 @@ function Navbar() {
               </div>
             )}
 
-            <div className={styles.helpContainer}>
-                 <FontAwesomeIcon icon={faCircleQuestion} />
-                 <p>Help</p>
-                  <FontAwesomeIcon icon={faChevronDown} />
-
-            </div>
+          
 
 
             {/* <FontAwesomeIcon icon={faCircleQuestion} /> */}
@@ -83,6 +87,15 @@ function Navbar() {
             {/* <FontAwesomeIcon icon={faCartShopping} /> */}
 
             </div>
+            <div className={`${styles.helpContainer} ${isDropdownOpen ? '': styles.isDropdownOpen}`} onClick={handleDropdownClick}>
+                 <FontAwesomeIcon icon={faCircleQuestion} className={styles.faCircleQuestion} />
+                 <p>Help</p>
+                  <FontAwesomeIcon icon={isDropdownOpen ? faChevronDown : faChevronUp} className={styles.chevron} />
+
+            </div>
+
+
+
           </div>
         </div>
       </div>

@@ -276,5 +276,30 @@
 .helpContainer{
     background-color: aqua;
     display: flex;
-    align-items: center;
+    display: flex; /* Set to flex */
+    align-items: center; /* Center vertically */
+    margin-left: 20px;
+    width: 100px;
+    height: 45px;
+   
+}
+
+/* Help section */
+
+.faCircleQuestion{
+    color: black;
+    font-size: 25px;
+    /* background-color: green; */
+    padding: 3px;
+}
+
+.helpContainer p{
+    /* background-color: #FF9900; */
+    padding-top: 5px;
+    height: 30px;
+}
+
+.chevron{
+    /* background-color: purple; */
+    font-size: 1rem;
 }
