@@ -92,6 +92,18 @@ function Navbar() {
                  <p>Help</p>
                   <FontAwesomeIcon icon={isDropdownOpen ? faChevronDown : faChevronUp} className={styles.chevron} />
 
+                  {!isDropdownOpen && (
+                    <div className={styles.additionalHelpContainer}> 
+                    <a href='/heplCenter'> Help Center</a>
+                    <a href='/placeOrder'> Place an Order</a>
+                    <a href='/trackOrder'> Track an Order</a>
+                    <a href='/orderCancellation'>Order Cancellation</a>
+                    <a href='/returnsRefunds'> Returns & Refunds</a>
+                    <a href='/payment'> Payment & Jumia Account</a>
+
+                    </div>
+                  )}
+
             </div>
 
 
