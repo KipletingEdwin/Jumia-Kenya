@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styles from "./Navbar.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserLarge, faChevronDown, faChevronUp, faHeart,faBox, faCircleQuestion, faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { faUserLarge, faChevronDown, faChevronUp, faHeart,faBox, faCircleQuestion, faMessage, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import freeDelivery1 from "../../assets/nav/freedelivery1.gif";
 import jumiakenya from "../../assets/nav/jumia.png";
 import jumiaIcon from "../../assets/nav/jumiaIcon.png";
@@ -100,6 +100,7 @@ function Navbar() {
                     <a href='/orderCancellation'>Order Cancellation</a>
                     <a href='/returnsRefunds'> Returns & Refunds</a>
                     <a href='/payment'> Payment & Jumia Account</a>
+                    <button><FontAwesomeIcon icon={faMessage} />LIVE CHAT</button>
 
                     </div>
                   )}

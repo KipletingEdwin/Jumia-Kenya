@@ -303,3 +303,15 @@
     /* background-color: purple; */
     font-size: 1rem;
 }
+
+/* Help button */
+
+.additionalHelpContainer{
+    background-color: blue;
+    height: 200px;
+}
+
+.additionalHelpContainer a {
+    background-color: green;
+    
+}
