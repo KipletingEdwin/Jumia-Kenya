@@ -307,11 +307,23 @@
 /* Help button */
 
 .additionalHelpContainer{
-    background-color: blue;
+    background-color: #ffffff;
     height: 200px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    position: absolute;
+    width: 160px;
+    top: 18%;
+    align-items: center;
+    /* border: 1px solid black; */
 }
 
 .additionalHelpContainer a {
-    background-color: green;
-    
+    /* background-color: green; */
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 5px;
 }
