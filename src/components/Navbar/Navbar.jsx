@@ -1,7 +1,16 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 import styles from "./Navbar.module.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserLarge, faChevronDown, faChevronUp, faHeart,faBox, faCircleQuestion, faMessage, faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUserLarge,
+  faChevronDown,
+  faChevronUp,
+  faHeart,
+  faBox,
+  faCircleQuestion,
+  faMessage,
+  faCartShopping,
+} from "@fortawesome/free-solid-svg-icons";
 import freeDelivery1 from "../../assets/nav/freedelivery1.gif";
 import jumiakenya from "../../assets/nav/jumia.png";
 import jumiaIcon from "../../assets/nav/jumiaIcon.png";
@@ -20,7 +29,6 @@ function Navbar() {
   const handleChevronClick = () => {
     setIsChevronDown(!isChevronDown);
   };
-
 
   return (
     <div className={styles.container}>
@@ -65,50 +73,86 @@ function Navbar() {
             <button className={styles.searchButton}>SEARCH</button>
 
             {/* Account icon */}
-            <div className={`${styles.account} ${isChevronDown ? '': styles.upHover}`} onClick={handleChevronClick}>
-            <FontAwesomeIcon icon={faUserLarge} className={styles.faUserLarge} />
-            <p className={styles.accountParagraph}>Account</p>
-            <FontAwesomeIcon icon={isChevronDown ? faChevronDown : faChevronUp} className={styles.faChevronDown} />
-            {!isChevronDown && (
-              <div className={styles.additionalItems}>
-                <a href='/signIn' className={styles.signIn}>SIGN IN</a>
-                <a href='/myAccount' className={styles.myAccount} ><FontAwesomeIcon icon={faUserLarge} className={styles.faUserLargeA}  />My Account</a>
-                <a href='/orders'className={styles.myAccount} ><FontAwesomeIcon icon={faBox} className={styles.faBox} />Orders</a>
-                <a href='/saved'className={styles.myAccount} ><FontAwesomeIcon icon={faHeart} className={styles.faHeart} />Saved Items</a>
-
-              </div>
-            )}
-
-          
-
-
-            {/* <FontAwesomeIcon icon={faCircleQuestion} /> */}
-            {/* <FontAwesomeIcon icon={faChevronDown} /> */}
-            {/* <FontAwesomeIcon icon={faCartShopping} /> */}
-
+            <div
+              className={`${styles.account} ${
+                isChevronDown ? "" : styles.upHover
+              }`}
+              onClick={handleChevronClick}
+            >
+              <FontAwesomeIcon
+                icon={faUserLarge}
+                className={styles.faUserLarge}
+              />
+              <p className={styles.accountParagraph}>Account</p>
+              <FontAwesomeIcon
+                icon={isChevronDown ? faChevronDown : faChevronUp}
+                className={styles.faChevronDown}
+              />
+              {!isChevronDown && (
+                <div className={styles.additionalItems}>
+                  <a href="/signIn" className={styles.signIn}>
+                    SIGN IN
+                  </a>
+                  <a href="/myAccount" className={styles.myAccount}>
+                    <FontAwesomeIcon
+                      icon={faUserLarge}
+                      className={styles.faUserLargeA}
+                    />
+                    My Account
+                  </a>
+                  <a href="/orders" className={styles.myAccount}>
+                    <FontAwesomeIcon icon={faBox} className={styles.faBox} />
+                    Orders
+                  </a>
+                  <a href="/saved" className={styles.myAccount}>
+                    <FontAwesomeIcon
+                      icon={faHeart}
+                      className={styles.faHeart}
+                    />
+                    Saved Items
+                  </a>
+                </div>
+              )}
             </div>
-            <div className={`${styles.helpContainer} ${isDropdownOpen ? '': styles.isDropdownOpen}`} onClick={handleDropdownClick}>
-                 <FontAwesomeIcon icon={faCircleQuestion} className={styles.faCircleQuestion} />
-                 <p>Help</p>
-                  <FontAwesomeIcon icon={isDropdownOpen ? faChevronDown : faChevronUp} className={styles.chevron} />
+            <div
+              className={`${styles.helpContainer} ${
+                isDropdownOpen ? "" : styles.isDropdownOpen
+              }`}
+              onClick={handleDropdownClick}
+            >
+              <FontAwesomeIcon
+                icon={faCircleQuestion}
+                className={styles.faCircleQuestion}
+              />
+              <p>Help</p>
+              <FontAwesomeIcon
+                icon={isDropdownOpen ? faChevronDown : faChevronUp}
+                className={styles.chevron}
+              />
 
-                  {!isDropdownOpen && (
-                    <div className={styles.additionalHelpContainer}> 
-                    <a href='/heplCenter'> Help Center</a>
-                    <a href='/placeOrder'> Place an Order</a>
-                    <a href='/trackOrder'> Track an Order</a>
-                    <a href='/orderCancellation'>Order Cancellation</a>
-                    <a href='/returnsRefunds'> Returns & Refunds</a>
-                    <a href='/payment'> Payment & Jumia Account</a>
-                    <button><FontAwesomeIcon icon={faMessage} />LIVE CHAT</button>
-
-                    </div>
-                  )}
-
+              {!isDropdownOpen && (
+                <div className={styles.additionalHelpContainer}>
+                  <a href="/heplCenter"> Help Center</a>
+                  <a href="/placeOrder"> Place an Order</a>
+                  <a href="/trackOrder"> Track an Order</a>
+                  <a href="/orderCancellation">Order Cancellation</a>
+                  <a href="/returnsRefunds"> Returns & Refunds</a>
+                  <a href="/payment"> Payment & Jumia Account</a>
+                  <button>
+                    <FontAwesomeIcon
+                      icon={faMessage}
+                      className={styles.liveChatFaMessage}
+                    />
+                    LIVE CHAT
+                  </button>
+                </div>
+              )}
             </div>
 
-
-
+            <div className={styles.cart}>
+              <FontAwesomeIcon icon={faCartShopping} />
+              <a href="/myCart">Cart</a>
+            </div>
           </div>
         </div>
       </div>

@@ -274,7 +274,7 @@
 }
 
 .helpContainer{
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     display: flex; /* Set to flex */
     align-items: center; /* Center vertically */
@@ -307,15 +307,18 @@
 /* Help button */
 
 .additionalHelpContainer{
-    background-color: #ffffff;
-    height: 200px;
+    /* background-color: #ffffff; */
+    /* background-color: goldenrod; */
+    height: 270px;
     display: flex;
+    border-radius: 5px;
     flex-direction: column;
     z-index: 2;
     position: absolute;
     width: 160px;
-    top: 18%;
+    top: 19%;
     align-items: center;
+    justify-content: center;
     /* border: 1px solid black; */
 }
 
@@ -327,3 +330,57 @@
     color: black;
     margin: 5px;
 }
+
+.additionalHelpContainer a:hover{
+    background-color: #f1f1f2;
+    color: black;
+}
+
+.additionalHelpContainer button{
+    background-color: #f68b1e;
+    margin-top: 5px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+    /* justify-content: center; */
+}
+
+.additionalHelpContainer button{
+    border: 1px solid #f68b1e;
+}
+
+.liveChatFaMessage{
+    /* background: greenyellow; */
+    height: 25px;
+    width: auto;
+    margin-left: 0%;
+    margin-right: 5px;
+}
+
+.cart {
+    /* background-color: #f68b1e; */
+    color: black; /* Text color */
+    padding: 10px; /* Add padding for better visual appearance */
+    font-size: 20px; /* Adjust font size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto; /* Adjust width as needed */
+    height: 35px; /* Adjust height as needed */
+    cursor: pointer; /* Show pointer cursor on hover */
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+}
+
+.cart a{
+    font-size: 16px;
+    font-weight: 500;
+    /* background-color: rebeccapurple; */
+    padding-top: 8px;
+    padding-left: 5px;
+    color: black;
+}
+
