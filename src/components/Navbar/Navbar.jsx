@@ -41,6 +41,7 @@ function Navbar() {
       {/* The second div containing Sell on Jumia,Jumia and Pay */}
       <div className={styles.iconsContainer}>
         <div className={styles.firstIcon}>
+          <div className={styles.iconsStore}> 
           <a href="/">
             <img
               src={jumiaIcon}
@@ -51,6 +52,7 @@ function Navbar() {
           </a>
           <img src={jumiakenya} alt="jumiaIcon" className={styles.jumiaIcon2} />
           <img src={pay} alt="pay-png" className={styles.pay} />
+          </div>
         </div>
 
         {/* The third div containing the search section */}
