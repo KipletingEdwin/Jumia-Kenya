@@ -43,6 +43,13 @@
     font-size: 12px;
 }
 
+.iconsStore{
+    /* background-color: green; */
+    display: flex;
+    margin: 0% 10%;
+    align-items: center;
+}
+
 /* Styling for individual icons in the first set */
 .jumiaIcon1{
     height: 15px;

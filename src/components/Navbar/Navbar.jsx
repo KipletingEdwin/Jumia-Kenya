@@ -52,7 +52,7 @@ function Navbar() {
           </a>
           <img src={jumiakenya} alt="jumiaIcon" className={styles.jumiaIcon2} />
           <img src={pay} alt="pay-png" className={styles.pay} />
-          </div>
+        </div>
         </div>
 
         {/* The third div containing the search section */}
