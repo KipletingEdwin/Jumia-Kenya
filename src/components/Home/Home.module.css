@@ -5,12 +5,15 @@
     height: auto;
     width: 100%;
     border: 2px solid green;
+    display: flex;
+    flex-direction: row;
     
 }
 
 .topBar{
     background-color: yellow;
-    margin: 25px;
+    margin: 5px;
+    width: 12%;
     border: 2px solid grey;
    
 }
@@ -19,7 +22,7 @@
     background-color: red;
     display: flex;
     flex-direction: column;
-    width: 12%;
+    width: 100%;
     margin: 0 5px;
     justify-content: center;
 }
@@ -41,4 +44,46 @@
 
 .fontAwesomeIcon{
     margin-right: 5px;
+}
+
+
+
+.imagesSlider {
+    overflow: hidden;
+    background-color: blue;
+    width: 40%;
+    height: auto;
+    margin: 5px;
+}
+
+.sliderContent {
+    display: flex;
+    width: 300%; /* Adjust this value based on the number of images */
+    animation: slide 10s infinite; /* Adjust the duration as needed */
+}
+
+.sliderContent a {
+    flex: 1;
+    text-align: center; /* Center the image within the anchor */
+    text-decoration: none; /* Remove underline */
+}
+
+.sliderContent img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    33.33% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
