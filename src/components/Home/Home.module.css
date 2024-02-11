@@ -1,2 +1,7 @@
 @import '../../../vars.css';
 
+.container{
+    background-color: #ffa7b3;
+    height: 1000px;
+    margin-top: 0%;
+}

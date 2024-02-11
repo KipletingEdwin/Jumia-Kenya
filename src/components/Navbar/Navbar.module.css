@@ -4,6 +4,9 @@
 /* Main container styles */
 .container{
     width: 100%;
+    background-color: yellowgreen;
+    height: auto;
+
   
 }
 
@@ -25,7 +28,7 @@
 /* Container for icons, including Sell on Jumia, Jumia, and Pay */
 .iconsContainer{
     background-color: #f1f1f2;
-    height: 300px;
+    height: auto;
 }
 
 /* Styling for the first set of icons (Sell on Jumia, Jumia, and Pay) */
