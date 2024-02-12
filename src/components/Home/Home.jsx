@@ -151,21 +151,21 @@ function Home() {
       <div className={styles.helpCentre}>
         <div className={styles.TopHelpCentre}>
           <div className={styles.items}>
-            <FontAwesomeIcon icon={faCircleQuestion} />
+            <FontAwesomeIcon icon={faCircleQuestion} className={styles.itemsListIcons} />
             <div className={styles.itemsList}> 
             <a href="/helpcentre">HELP CENTER</a>
             <p>Guide To Customer Care</p>
             </div>
           </div>
           <div className={styles.items}>
-          <FontAwesomeIcon icon={faArrowsRotate} />
+          <FontAwesomeIcon icon={faArrowsRotate}  className={styles.itemsListIcons} />
           <div className={styles.itemsList}> 
             <a href="/easyreturn">EASY RETURN</a>
             <p>Quick refund</p>
             </div>
           </div>
           <div className={styles.items}>
-          <FontAwesomeIcon icon={faMoneyBill1Wave} />
+          <FontAwesomeIcon icon={faMoneyBill1Wave}  className={styles.itemsListIcons} />
           <div className={styles.itemsList}>
             <a href="/sellOnJumia">SELL ON JUMIA</a>
             <p>Millions of Visitors</p>
