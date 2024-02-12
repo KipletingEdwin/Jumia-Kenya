@@ -16,7 +16,6 @@ import freeDelivery1 from "../../assets/nav/freedelivery1.gif";
 import jumiakenya from "../../assets/nav/jumia.png";
 import jumiaIcon from "../../assets/nav/jumiaIcon.png";
 import pay from "../../assets/nav/pay.png";
-import searchIcon from "../../assets/nav/searchIcon.png";
 
 function Navbar() {
   // State to manage the visibility of additional account items

@@ -350,7 +350,6 @@
     position: absolute;
     width: 160px;
     top: 19%;
-    align-items: center;
     justify-content: center;
     /* border: 1px solid black; */
 }
@@ -361,7 +360,7 @@
     font-weight: 500;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: black;
-    margin: 5px;
+    margin: 5px 15px;
 }
 
 .additionalHelpContainer a:hover{
@@ -400,10 +399,7 @@
     padding: 10px; /* Add padding for better visual appearance */
     font-size: 20px; /* Adjust font size */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto; /* Adjust width as needed */
-    height: 35px; /* Adjust height as needed */
+    height: 40px; /* Adjust height as needed */
     cursor: pointer; /* Show pointer cursor on hover */
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
 }
@@ -412,8 +408,9 @@
     font-size: 16px;
     font-weight: 500;
     /* background-color: rebeccapurple; */
-    padding-top: 8px;
-    padding-left: 5px;
+    text-decoration: none;
+    /* padding-left: 5px; */
+    margin-left: 3px;
     color: black;
 }
 
