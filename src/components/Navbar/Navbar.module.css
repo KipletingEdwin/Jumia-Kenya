@@ -116,9 +116,14 @@
     border-radius: 5px;
 }
 
+.searchBar img{
+    color: blue;
+}
+
 /* Styling for the search icon in the search bar */
 .searchbarIcon{
-    height: 25px;
+    color: #75757a;
+    height: 20px;
     width: auto;
     padding: 12px;
 }

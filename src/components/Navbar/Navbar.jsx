@@ -10,6 +10,7 @@ import {
   faCircleQuestion,
   faMessage,
   faCartShopping,
+  faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import freeDelivery1 from "../../assets/nav/freedelivery1.gif";
 import jumiakenya from "../../assets/nav/jumia.png";
@@ -41,18 +42,22 @@ function Navbar() {
       {/* The second div containing Sell on Jumia,Jumia and Pay */}
       <div className={styles.iconsContainer}>
         <div className={styles.firstIcon}>
-          <div className={styles.iconsStore}> 
-          <a href="/">
+          <div className={styles.iconsStore}>
+            <a href="/">
+              <img
+                src={jumiaIcon}
+                alt="jumia-icon"
+                className={styles.jumiaIcon1}
+              />
+              Sell on Jumia
+            </a>
             <img
-              src={jumiaIcon}
-              alt="jumia-icon"
-              className={styles.jumiaIcon1}
+              src={jumiakenya}
+              alt="jumiaIcon"
+              className={styles.jumiaIcon2}
             />
-            Sell on Jumia
-          </a>
-          <img src={jumiakenya} alt="jumiaIcon" className={styles.jumiaIcon2} />
-          <img src={pay} alt="pay-png" className={styles.pay} />
-        </div>
+            <img src={pay} alt="pay-png" className={styles.pay} />
+          </div>
         </div>
 
         {/* The third div containing the search section */}
@@ -61,9 +66,8 @@ function Navbar() {
             <img src={jumiakenya} alt="jumia-kenya" />
 
             <div className={styles.searchBar}>
-              <img
-                src={searchIcon}
-                alt="search-icon"
+              <FontAwesomeIcon
+                icon={faMagnifyingGlass}
                 className={styles.searchbarIcon}
               />
               <input
