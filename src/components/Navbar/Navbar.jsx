@@ -130,7 +130,7 @@ function Navbar() {
                 icon={faCircleQuestion}
                 className={styles.faCircleQuestion}
               />
-              <p>Help</p>
+              <p className={styles.accountParagraph}>Help</p>
               <FontAwesomeIcon
                 icon={isDropdownOpen ? faChevronDown : faChevronUp}
                 className={styles.chevron}
