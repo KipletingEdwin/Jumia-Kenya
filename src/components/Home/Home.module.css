@@ -4,22 +4,23 @@
     background-color: #ffa7b3;
     height: auto;
     width: 100%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: flex;
     flex-direction: row;
     
 }
 
 .topBar{
-    background-color: yellow;
+    background-color: #fff;
     margin: 5px;
     width: 12%;
-    border: 2px solid grey;
+    /* border: 2px solid grey; */
+    height: 400px;
    
 }
 
 .menu{
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -28,7 +29,7 @@
 }
 
 .menu a{
-    background-color: green;
+    /* background-color: green; */
     color: rgb(49, 49, 51);
     text-decoration: none;
     padding: 5px 5px;
