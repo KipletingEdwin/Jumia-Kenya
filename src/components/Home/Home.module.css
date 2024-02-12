@@ -122,7 +122,7 @@
 
 .itemsList{
     /* background-color: greenyellow; */
-    padding: 5px 5px;
+    padding: 0px 5px;
 }
 
 .itemsList a{
@@ -130,4 +130,20 @@
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
+}
+
+.bottomHelpCentre{
+    margin: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomHelpCentre img{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    border-radius: 5px;
+
 }
