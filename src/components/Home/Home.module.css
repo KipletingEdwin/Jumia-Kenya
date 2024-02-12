@@ -57,6 +57,12 @@
     margin: 5px;
 }
 
+/* .sliderContent img {
+    max-width: 100%; 
+    height: auto; 
+} */
+
+
 .sliderContent {
     display: flex;
     width: 300%; /* Adjust this value based on the number of images */

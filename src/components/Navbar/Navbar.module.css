@@ -34,6 +34,7 @@
 /* Styling for the first set of icons (Sell on Jumia, Jumia, and Pay) */
 .firstIcon{
     background-color: aliceblue;
+    /* background-color: yellow; */
     height: 30px;
     display: flex;
     align-items: center;
@@ -41,9 +42,12 @@
 }
 
 /* Styling for links in the first set of icons */
-.firstIcon a{
+.iconsStore a{
     color: #f68b1e;
-    font-size: 12px;
+    font-size: 14px;
+    /* background-color: blue; */
+    width: 600px;
+    margin-bottom: 10px;
 }
 
 .iconsStore{
@@ -53,18 +57,22 @@
     align-items: center;
 }
 
+/* .iconsStore img{
+    background-color: red;
+} */
+
 /* Styling for individual icons in the first set */
 .jumiaIcon1{
     height: 15px;
     width: auto;
     margin-left: 3%;
     margin-top: 8px;
+    margin-right: 7px;
 }
 
 .jumiaIcon2{
     height: 15px;
     width: auto;
-    margin-left: -60%;
 
 }
 
@@ -118,9 +126,11 @@
 /* Styling for the input field in the search bar */
 .searchBar input{
     height: 91%;
-    border: none;
     font-family: "Roboto,Arial,sans-serif";
     font-size: 18px;
+    width: 100%;
+    border: none !important;
+    outline: none !important;
 }
 
 /* Styling for the search button */

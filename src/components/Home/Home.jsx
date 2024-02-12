@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import styles from "./Home.module.css";
 import valentine1 from "../../assets/imageSlides/valentine1.gif";
 import valentine2 from "../../assets/imageSlides/valentine2.jpg";
@@ -29,10 +29,18 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-  const[currentSlide, setCurrentSlide] = useState(0);
-
-  const slides = [valentine1, valentine2, valentine3, valentine4, valentine5, valentine6, valentine7, valentine8];
+  const slides = [
+    valentine1,
+    valentine2,
+    valentine3,
+    valentine4,
+    valentine5,
+    valentine6,
+    valentine7,
+    valentine8
+  ];
   const handlePrevSlide = () => {
     const newIndex = (currentSlide - 1 + slides.length) % slides.length;
     setCurrentSlide(newIndex);
@@ -46,7 +54,6 @@ function Home() {
   const handleDotClick = () => {
     setCurrentSlide(index);
   };
-
 
   return (
     <section className={styles.container}>
@@ -139,19 +146,33 @@ function Home() {
         </div>
       </div>
       <div className={styles.imagesSlider}>
-        {
-          slides.map((slide, index) => (
-            <div key={index} className={`${styles.side} ${
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`${styles.side} ${
               index === currentSlide ? styles.activeSlide : ""
-            }`}>
-              <img src={slide} alt={`Slide ${index + 1}`}/>
-            </div>
-          ))
-        }
+            }`}
+          >
+            <img src={slide} alt={`Slide ${index + 1}`} />
+          </div>
+        ))}
 
         <div className={styles.navigation}>
           <button onClick={handlePrevSlide}>Previous</button>
           <button onClick={handleNextSlide}>Next</button>
+        </div>
+
+        <div className={styles.dots}>
+          {slides.map((_, index) => (
+            <span
+              key={index}
+              className={`${styles.dot} ${
+                index === currentSlide ? styles.activeDot : ""
+              }`}
+            >
+              onClick={() => handleDotClick(index)}
+            </span>
+          ))}
         </div>
         {/* <div className={styles.sliderContent}>
           <a href="/valentine1">

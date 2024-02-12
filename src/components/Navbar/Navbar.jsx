@@ -31,7 +31,7 @@ function Navbar() {
   };
 
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       {/* The first div containing Free delivery gifs  */}
 
       <div className={styles.navbarImage}>
@@ -158,7 +158,7 @@ function Navbar() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

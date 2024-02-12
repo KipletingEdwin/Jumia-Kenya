@@ -4,17 +4,16 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh'],
-  rules: {
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
+  settings: { 
+    // Update the React version to 18.2.0
+    react: { version: '18.2' /* Update with your React version */ } 
   },
-}
+  plugins: [],
+  rules: {
+    // You can add any additional rules or overrides here
+  },
+};
