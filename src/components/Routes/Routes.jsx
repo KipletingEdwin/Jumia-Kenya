@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Home from '../Home/Home'
 import Navbar from '../Navbar/Navbar'
+import SignIn from '../SignIn/SignIn';
 
 function Routes() {
   return (
@@ -9,7 +10,7 @@ function Routes() {
     <div>
         <Navbar />
         <Switch>
-            <Route path="/signIn" component={SignInPage}/>
+            <Route path="/signIn" component={SignIn}/>
             {/* Define other routes for different pages */}
 
             {/* <Route path="/" component={HomePage}/> */}
