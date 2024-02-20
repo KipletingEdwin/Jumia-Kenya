@@ -416,5 +416,9 @@
 
 .cart:hover{
     color: #f68b1e;
+    cursor: pointer;
+}
+.cart a:hover{
+    color: #f68b1e;
 }
 
