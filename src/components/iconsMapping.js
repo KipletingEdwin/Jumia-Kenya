@@ -1,0 +1,36 @@
+import {
+    faBagShopping,
+    faMobile,
+    faRadio,
+    faDesktop,
+    faShirt,
+    faAppleWhole,
+    faFaceGrinBeamSweat,
+    faDumbbell,
+    faGasPump,
+    faBottleDroplet,
+    faHotel,
+    faEllipsis,
+    faCircleQuestion,
+    faArrowsRotate,
+    faMoneyBill1Wave,
+  } from "@fortawesome/free-solid-svg-icons";
+  
+  export const iconsMapping = {
+    "faBagShopping": faBagShopping,
+    "faMobile": faMobile,
+    "faRadio": faRadio,
+    "faDesktop": faDesktop,
+    "faShirt": faShirt,
+    "faAppleWhole": faAppleWhole,
+    "faFaceGrinBeamSweat": faFaceGrinBeamSweat,
+    "faDumbbell": faDumbbell,
+    "faGasPump": faGasPump,
+    "faBottleDroplet": faBottleDroplet,
+    "faHotel": faHotel,
+    "faEllipsis": faEllipsis,
+    "faCircleQuestion": faCircleQuestion,
+    "faArrowsRotate": faArrowsRotate,
+    "faMoneyBill1Wave": faMoneyBill1Wave,
+  };
+  
