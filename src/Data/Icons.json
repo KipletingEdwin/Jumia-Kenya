@@ -1,66 +1,369 @@
-
-
-
 [
       {
         "name": "Official Stores",
         "icon": "faBagShopping",
-        "href": "/officailStore"
+        "href": "/officailStore",
+        "content": [
+          {
+            "title": "PHONES & ACCESSORIES",
+            "subtitles": ["Samsung", "Tecno", "Infinix", "FreeYond", "Oraimo"]
+          },
+          {
+            "title": "ELECTRONICS",
+            "subtitles": ["Vitron", "Vision Plus", "TCL", "Hisense", "Multichoice"]
+          },
+          {
+            "title": "APPLIANCES",
+            "subtitles": ["Nunix", "Roch", "Ramtoms", "Hotpoint", "Mika"]
+          },
+          {
+            "title": "Home",
+            "subtitles": ["Solarmax", "Nunix", "Annov", "Redberry", "Miniso"]
+          },
+          {
+            "title": "HEALTH & BEAUTY",
+            "subtitles": ["Garnier", "Tecno", "Infinix", "FreeYond", "Oraimo"]
+          },
+          {
+            "title": "COMPUTING",
+            "subtitles": ["HP", "Lenovo", "Dell", "Canon", "Asus"]
+          },
+          {
+            "title": "FASHION",
+            "subtitles": ["adidas", "Ecko Unltd"]
+          },
+          {
+            "title": "BABY PRODUCTS",
+            "subtitles": ["Huggies"]
+          },
+          {
+            "title": "GROCERY",
+            "subtitles": ["Coca Cola", "PRK", "Diageo", "Uniliver"]
+          }
+          
+        ]
       },
       {
         "name": "Phones & Tablets",
         "icon": "faMobile",
-        "href": "/phones&tablets"
+        "href": "/phones&tablets",
+        "content": [
+          {
+            "title": "MOBILE PHONES",
+            "subtitles": ["Smartphones", "Featured Phones", "Smartphones under 10k", "Feature Phones Under 2,000"]
+          },
+          {
+            "title": "TABLETS",
+            "subtitles": ["Tablets", "Tablet Accessories", "Tablet Bags & Covers"]
+          },
+          {
+            "title": "BEST SELLERS SMARTPHONES",
+            "subtitles": ["Samsung", "Tecno", "Xiaomi", "Infinix", "Oppo", "Vivo", "Itel"]
+          },
+          {
+            "title": "ACCESSORIES",
+            "subtitles": ["Portable Powerbanks", "Smart Watches", "Cases & Sleeves", "Screen Protectors", "Bluetooth Accessories", "Batteries & Battery Packs", "Accessories Under 1,000", "Virtual Reality Headsets", "Mounts & Stands"]
+          },
+          {
+            "title": "TOP SMARTPHONE BRANDS",
+            "subtitles": ["Samsung Phones", "Xiaomi Phones", "Nokia Phones", "Tecno Phones", "Infinix Phones", "Huawei Phones", "Oppo Phones"]
+          },
+          {
+            "title": "REFURB CORNER",
+            "subtitles": ["Refurbished Phones", "Badili Phones"]
+          }
+
+        ]
       },
       {
         "name": "TVs & Audio",
         "icon": "faRadio",
-        "href": "/tv&audio"
+        "href": "/tv&audio",
+        "content": [
+          {
+            "title": "TELEVISIONS",
+            "subtitles": ["Smart TVs", "Digital TVs"]
+          },
+          {
+            "title": "ACCESSORIES & SUPPLIES",
+            "subtitles": ["Accessories & Video Supplies", "Batteries", "Batteries, Chargers & Accessories", "Cables", "Camera & Photo Accessories", "Power Protection", "Television Accessories", "Security & Surveillance"]
+          },
+          {
+            "title": "BEST SELLER TV BRANDS",
+            "subtitles": ["Vitron TV", "TCL TV", "HiSense TV", "Skyworth", "Vision Plus", "Samsung TV", "GLD", "LG TV"]
+          },
+          {
+            "title": "HOME AUDIO",
+            "subtitles": ["Speakers", "Home theater System", "Bluetooth Speakers", "Sound Bars", "Compact Radio & Stereos", "Hi-Fi Systems Under 5,000"]
+          }
+
+        ]
       },
       {
         "name": "Appliances",
         "icon": "faDesktop",
-        "href": "/appliances"
+        "href": "/appliances",
+        "content": [
+          {
+            "title": "LARGE APPLIANCES",
+            "subtitles": ["Refrigerators", "Freezers", "Wash Dispensers & Coolers", "Washers & Dryers"]
+          },
+          {
+            "title": "SMALL APPLIANCES",
+            "subtitles": ["Blenders", "Toasters", "Kettles", "Ironing & Laundry"]
+          },
+          {
+            "title": "COOKING APPLIANCES",
+            "subtitles": ["Cooktops", "Microwave & Ovens", "Cookers", "Cooking Appliance Accessories"]
+          },
+          {
+            "title": "BEST SELLERS APPLIANCES BRANDS",
+            "subtitles": ["Philips", "Ramtoms", "Roch", "Hisense", "Mika", "Binatone", "Von", "Nexus"]
+          }
+
+        ]
       },
       {
         "name": "Health & Beauty",
         "icon": "faShirt",
-        "href": "/Health&Beauty"
+        "href": "/Health&Beauty",
+        "content": [
+          {
+            "title": "FACIAL SKINCARE",
+            "subtitles": ["Moisturizers", "Cleansers", "Masks", "Toners", "Sun Care"]
+          },
+          {
+            "title": "MAKEUP",
+            "subtitles": ["Face", "Eyes", "Lips", "Tools & Brushes", "Makeup Kits & Combos"]
+          },
+          {
+            "title": "PERSONAL CARE",
+            "subtitles": ["Body Lotions", "Roll-ons & Deodrants", "Shower Gels", "Shave & Hair Removal"]
+          },
+          {
+            "title": "HAIR CARE",
+            "subtitles": ["Conditioner", "Extensions, Wigs & Accessories", "Hair tools", "Hair Loss Products", "Hair Styling Products"]
+          },
+          {
+            "title": "HEALTH & WELLNESS",
+            "subtitles": ["Health Supplements", "Sport nutrition", "Feminine care", "Sexual Wellness"]
+          },
+          {
+            "title": "FRAGRANCES",
+            "subtitles": ["Men's", "Womes's", "Gift sets & combos", "Aroma Therapy"]
+          },
+          {
+            "title": "LUXURY BEAUTY",
+            "subtitles": ["Fragrances", "Skincare", "Make Up"]
+          }
+        ]
       },
       {
         "name": "Home & Office",
         "icon": "faAppleWhole",
-        "href": "/home&office"
+        "href": "/home&office",
+        "content": [
+          {
+            "title": "HOME KITCHEN",
+            "subtitles": ["Home Decor", "Bedding", "Wall Art", "Bath", "Lighting", "Storage & Organisation", "Kitchen Dining", "Furniture"]
+          },
+          {
+            "title": "OFFICE PRODUCTS",
+            "subtitles": ["Office & School Supplies", "Office Electronics", "Office Furniture & Lighting", "Stationary"]
+          },
+          {
+            "title": "BEST SELLER HOME BRANDS",
+            "subtitles": ["Rashnik", "Solarmax", "Nunix", "Annov", "Redberry", "Miniso", "Superfoam"]
+          }
+        ]
       },
       {
         "name": "Fashion",
         "icon": "faFaceGrinBeamSweat",
-        "href": "/fashion"
+        "href": "/fashion",
+        "content":[
+          {
+            "title": "MEN'S FASHION",
+            "subtitles": ["Shirts", "Shoes", "Suits 7 Sports Coats", "Jeans", "Underwear", "T-Shirts & Tanks", "Pants", "Shorts", "Watches", "Fashion Sneakers", "Loafers & Slip Ons", "Belts", "Sunglasses & Eyewear Accessories"]
+          },
+          {
+            "title": "WOMEN'S FASHION",
+            "subtitles": ["Dresses", "Suits & Blazers", "Tops & Tees", "Coats, Jackets & Vests", "Jumpsuits, Rompers & Overalls", "Skirts", "Lingerie, Sleep & Lounge", "Jeans", "Shorts", "Jewelry", "Sandals", "Flats", "Handbags & Wallets"]
+          },
+          {
+            "title": "KID'S FASHION",
+            "subtitles": ["Boys", "Girls"]
+          },
+          {
+            "title": "SHOP BY BRAND",
+            "subtitles": ["Adidas", "DeFacto", "Ecko Uniltd", "Curren", "Forever Young", "Bata", "Citywalk"]
+          },
+          {
+            "title": "BABY",
+            "subtitles": ["Baby Boys", "Baby Girls"]
+          }
+        ]
       },
       {
         "name": "Computing",
         "icon": "faDumbbell",
-        "href": "/computing"
+        "href": "/computing",
+        "content":[
+          {
+            "title": "LAPTOPS",
+            "subtitles": ["Netbooks", "Ultrabooks", "Notebooks"]
+          },
+          {
+            "title": "COMPUTER DATA STORAGE",
+            "subtitles": ["External Hard Drives", "USB Flash Drives"]
+          },
+          {
+            "title": "SHOP BY LAPTOP BRANDS",
+            "subtitles": ["HP Laptops", "Dell Laptops", "Lenovo Laptops", "Apple Laptops", "Asus Laptops"]
+          },
+          {
+            "title": "COMPUTER ACCESSORIES",
+            "subtitles": ["Laptop Accessories", "Desktop", "Monitors", "Scanners", "Printers", "Keyboards, Mice & Accessories", "Computer Cable & Adapters", "Printer Ink & Toner"]
+          },
+          {
+            "title": "COMPUTER COMPONENTS",
+            "subtitles": ["Internal Hard Drive", "Graphics Cards", "Fans & Cooling", "Fans 7 Cooling", "CPU Processors"]
+          },
+          {
+            "title": "REFURB CORNER",
+            "subtitles": ["Refurbished Laptops"]
+          }
+        ]
       },
       {
         "name": "Supermarket",
         "icon": "faGasPump",
-        "href": "/supermarket"
+        "href": "/supermarket",
+        "content":[
+          {
+            "title": "FOOD CUPBOARD",
+            "subtitles": ["Snacks,Crips & Nuts", "Grains and Rice", "Sugar & Flour", "Breakfast Cereals", "Margarine, Jams, Honey & Spreads", "Pasta & Noodles"]
+          },
+          {
+            "title": "DRINKS",
+            "subtitles": ["Beer, Wine & Spirits", "Carbonated Drinks", "Coffee, Tea & Cocoa", "Dairy", "Juices & Non Carbonated Drinks", "Water"]
+          },
+          {
+            "title": "HOUSEHOLD SUPPLIES",
+            "subtitles": ["Air Fresheners", "Bathroom Cleaners", "Bulb & Batteries", "Floor Cleaners", "Household Cleaners & Sundries", "Kitchen Cleaner", "Laundry", "Papers & Rolls"]
+          },
+          {
+            "title": "DRINKS BRANDS",
+            "subtitles": ["Laptop Accessories", "Desktop", "Monitors", "Scanners", "Printers", "Keyboards, Mice & Accessories", "Computer Cable & Adapters", "Printer Ink & Toner"]
+          },
+          {
+            "title": "COMPUTER ACCESSORIES",
+            "subtitles": ["Laptop Accessories", "Desktop", "Monitors", "Scanners", "Printers", "Keyboards, Mice & Accessories", "Computer Cable & Adapters", "Printer Ink & Toner"]
+          }
+        ]
       },
       {
         "name": "Baby Products",
         "icon": "faBottleDroplet",
-        "href": "/babyproducts"
+        "href": "/babyproducts",
+        "content":[
+          {
+            "title": "FEEDING",
+            "subtitles": ["Bibs & Burp Clothes", "Bottle-Feeding", "Breastfeeding", "Highchairs & Booster Seats", "Pacifiers & Accessories", "", "Solid Feeding"]
+          },
+          {
+            "title": "DIAPERING",
+            "subtitles": ["Diaper Bags", "Disposable Diapers", "Portable Changing Pads", "Cloth Diapers", "Changing Tables", "Wipers & Holders"]
+          },
+          {
+            "title": "GEAR",
+            "subtitles": ["Walkers", "Bagpacks & Carriers", "Swings, Jumpers & Bouncers", "New External Link"]
+          },
+          {
+            "title": "BABY SAFETY",
+            "subtitles": ["Monitors", "Sleep Positioners", "Edge & Corner Guards"]
+          },
+          {
+            "title": "BABY & TODDLER TOYS",
+            "subtitles": ["Building Toys", "Toy Gift Sets", "Music & Sound", "Bath Toys"]
+          },
+          {
+            "title": "SLEEPING AND NURSERY",
+            "subtitles": ["Baby Beds", "Baby Bedding", "Nursery Beds", "Baby Mattresses"]
+          }
+        ]
       },
       {
         "name": "Sporting Goods",
         "icon": "faHotel",
-        "href": "/othergoods"
+        "href": "/othergoods",
+        "content":[
+          {
+            "title": "SPORTS & FITNESS",
+            "subtitles": ["Gymnastics Equipment", "Exercise & Fitness", "Team Sports", "Clothing", "Accessories"]
+          },
+          {
+            "title": "SPORTS NUTRITION",
+            "subtitles": ["Carb Management Supplemements", "Endurance & Energy", "Fat Burners & Thermogenics", "Supplememnts", "Post-Work & Recovery", "Pre-Workout", "Protein", "Supplememt Stacks", "Testerone Boosters", "Weight Gainers"]
+          },
+          {
+            "title": "OUTDOOR RECREATION",
+            "subtitles": ["Camping & Hiking", "Skateboards & Scooters", "Cycling", "Accessories"]
+          },
+          {
+            "title": "SHOP BY BRANDS",
+            "subtitles": ["Nairobi Sports House", "Reebok", "Adidas", "Puma", "Speedo", "Intex"]
+          }
+        ]
       },
       {
-        "name": "Other Categorie",
+        "name": "Other Categories",
         "icon": "faEllipsis",
-        "href": "/othergoods"
+        "href": "/othergoods",
+        "content":[
+          {
+            "title": "AUTOMOBILE",
+            "subtitles": ["Car Electronics & Accessories", "Car Safety & Security", "Motorcycle & Powersports", "Lights & Lighting Accessories ", "Replacement Parts"]
+          },
+          {
+            "title": "GARDEN & OUTDOORS",
+            "subtitles": ["Gardening & Lawn Care", "Grilling & Outdoor Cooking", "Outdoor Decor", "Patio Furniture & Accessories", "Farm & Ranch"]
+          },
+          {
+            "title": "MISCELLANEOUS"
+          },
+          {
+            "title": "GAMING",
+            "subtitles": ["Playstation", "Digital Games", "Nintendo", "PC Gaming", "Sony PSP"]
+          },
+          {
+            "title": "BOOKS, MOVIES AND MUSIC",
+            "subtitles": ["Education & Learning", "Biography & Autobiography", "Literature", "Children & Teens", "Study Aids", "Christian Books & Bibles"]
+          },
+          {
+            "title": "MUSICAL INSTRUMENTS"
+          },
+          {
+            "title": "INDUSTRIAL & SCIENTIFIC"
+          },
+          {
+            "title": "PET SUPPLIES"
+
+          },
+          {
+            "title": "LIVESTOCK"
+          },
+          {
+            "title": "SERVICES"
+          },
+          {
+            "title": "TOYS 7 GAMES"
+          },
+          {
+            "title": "ELECTRONICS",
+            "subtitles": ["Televisions", "Home Audio", "Accessories & Supplies", "Cameras", "Best Seller TV Brands"]
+          }
+        ]
       }
     
     ]
