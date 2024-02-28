@@ -1,21 +1,12 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faUserLarge,
-  faChevronDown,
-  faChevronUp,
-  faHeart,
-  faBox,
-  faCircleQuestion,
-  faMessage,
-  faCartShopping,
-  faMagnifyingGlass,
-} from "@fortawesome/free-solid-svg-icons";
+import { faUserLarge, faChevronDown, faChevronUp, faHeart, faBox, faCircleQuestion, faMessage, faCartShopping, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import freeDelivery1 from "../../assets/nav/freedelivery1.gif";
 import jumiakenya from "../../assets/nav/jumia.png";
 import jumiaIcon from "../../assets/nav/jumiaIcon.png";
 import pay from "../../assets/nav/pay.png";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   // State to manage the visibility of additional account items
@@ -95,27 +86,28 @@ function Navbar() {
               />
               {!isChevronDown && (
                 <div className={styles.additionalItems}>
+                  {/* Use Link component for navigation */}
                   <a href="/signIn" className={styles.signIn}>
                     SIGN IN
                   </a>
-                  <a href="/myAccount" className={styles.myAccount}>
+                  <Link to="/myAccount" className={styles.myAccount}>
                     <FontAwesomeIcon
                       icon={faUserLarge}
                       className={styles.faUserLargeA}
                     />
                     My Account
-                  </a>
-                  <a href="/orders" className={styles.myAccount}>
+                  </Link>
+                  <Link to="/orders" className={styles.myAccount}>
                     <FontAwesomeIcon icon={faBox} className={styles.faBox} />
                     Orders
-                  </a>
-                  <a href="/saved" className={styles.myAccount}>
+                  </Link>
+                  <Link to="/saved" className={styles.myAccount}>
                     <FontAwesomeIcon
                       icon={faHeart}
                       className={styles.faHeart}
                     />
                     Saved Items
-                  </a>
+                  </Link>
                 </div>
               )}
             </div>
@@ -137,7 +129,7 @@ function Navbar() {
 
               {!isDropdownOpen && (
                 <div className={styles.additionalHelpContainer}>
-                  <a href="/heplCenter"> Help Center</a>
+                  <a href="/helpCenter"> Help Center</a>
                   <a href="/placeOrder"> Place an Order</a>
                   <a href="/trackOrder"> Track an Order</a>
                   <a href="/orderCancellation">Order Cancellation</a>

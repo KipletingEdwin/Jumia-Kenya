@@ -1,0 +1,66 @@
+{
+    "icons": [
+      {
+        "name": "Official Stores",
+        "icon": "faBagShopping",
+        "href": "/officailStore"
+      },
+      {
+        "name": "Phones & Tablets",
+        "icon": "faMobile",
+        "href": "/phones&tablets"
+      },
+      {
+        "name": "TVs & Audio",
+        "icon": "faRadio",
+        "href": "/tv&audio"
+      },
+      {
+        "name": "Appliances",
+        "icon": "faDesktop",
+        "href": "/appliances"
+      },
+      {
+        "name": "Health & Beauty",
+        "icon": "faShirt",
+        "href": "/Health&Beauty"
+      },
+      {
+        "name": "Home & Office",
+        "icon": "faAppleWhole",
+        "href": "/home&office"
+      },
+      {
+        "name": "Fashion",
+        "icon": "faFaceGrinBeamSweat",
+        "href": "/fashion"
+      },
+      {
+        "name": "Computing",
+        "icon": "faDumbbell",
+        "href": "/computing"
+      },
+      {
+        "name": "Supermarket",
+        "icon": "faGasPump",
+        "href": "/supermarket"
+      },
+      {
+        "name": "Baby Products",
+        "icon": "faBottleDroplet",
+        "href": "/babyproducts"
+      },
+      {
+        "name": "Sporting Goods",
+        "icon": "faHotel",
+        "href": "/othergoods"
+      },
+      {
+        "name": "Other Categorie",
+        "icon": "faEllipsis",
+        "href": "/othergoods"
+      }
+    
+    ]
+  }
+  

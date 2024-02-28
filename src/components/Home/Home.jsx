@@ -1,13 +1,6 @@
 import React from "react";
 import styles from "./Home.module.css";
-import valentine1 from "../../assets/imageSlides/valentine1.gif";
-import valentine2 from "../../assets/imageSlides/valentine2.jpg";
-import valentine3 from "../../assets/imageSlides/valentine3.jpg";
-import valentine4 from "../../assets/imageSlides/valentine4.jpg";
-import valentine5 from "../../assets/imageSlides/valentine5.jpg";
-import valentine6 from "../../assets/imageSlides/valentine6.jpg";
-import valentine7 from "../../assets/imageSlides/valentine7.jpg";
-import valentine8 from "../../assets/imageSlides/valentine8.jpg";
+import valentines from '../../Data/Images.json';
 import helpCentreGif from "../../assets/helpCentre/helpCentre.gif";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -29,8 +22,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
-
-
   return (
     <section className={styles.container}>
       <div className={styles.topBar}>
@@ -122,51 +113,21 @@ function Home() {
         </div>
       </div>
       <div className={styles.imagesSlider}>
-       
-        
-        
+        <div className={styles.sliderContent}>
 
-       
+        {
+  valentines.map((valentine, index) => {
+    return (
+      <div className={styles.sliderContent} key={index}> 
+        <a href="/valentine1">
+          <img src={valentine.imageSrc} alt={valentine.name}/>
+        </a>
+      </div>
+    );
+  })
+}
 
-        
-
-
-
-
-
-
-         <div className={styles.sliderContent}>
-          <a href="/valentine1">
-            <img src={valentine1} alt="valentine1" />
-          </a>
-          <a href="/valentine2">
-            <img src={valentine2} alt="valentine2" />
-          </a>
-          <a href="/valentine3">
-            <img src={valentine3} alt="valentine3" />
-          </a>
-          <a href="/valentine4">
-            <img src={valentine4} alt="valentine4" />
-          </a>
-          <a href="/valentine5">
-            <img src={valentine5} alt="valentine5" />
-          </a>
-          <a href="/valentine6">
-            <img src={valentine6} alt="valentine6" />
-          </a>
-          <a href="/valentine7">
-            <img src={valentine7} alt="valentine7" />
-          </a>
-          <a href="/valentine8">
-            <img src={valentine8} alt="valentine8" />
-          </a>
-        </div> 
-
-
-
-
-
-
+        </div>
       </div>
 
       <div className={styles.helpCentre}>
