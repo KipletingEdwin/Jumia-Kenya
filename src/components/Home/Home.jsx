@@ -12,7 +12,7 @@ import {
   faMoneyBill1Wave,
 } from "@fortawesome/free-solid-svg-icons";
 
-console.log(IconsData);
+// console.log(IconsData);
 
 function Home() {
   return (
