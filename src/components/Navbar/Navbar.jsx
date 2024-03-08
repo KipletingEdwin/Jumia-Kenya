@@ -6,12 +6,14 @@ import freeDelivery1 from "../../assets/nav/freedelivery1.gif";
 import jumiakenya from "../../assets/nav/jumia.png";
 import jumiaIcon from "../../assets/nav/jumiaIcon.png";
 import pay from "../../assets/nav/pay.png";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function Navbar() {
   // State to manage the visibility of additional account items
   const [isChevronDown, setIsChevronDown] = useState(true);
   const [isDropdownOpen, setIsDropdownOpen] = useState(true);
+
+  
 
   const handleDropdownClick = () => {
     setIsDropdownOpen(!isDropdownOpen); //Toggle chevron state
@@ -68,7 +70,9 @@ function Navbar() {
             </div>
             <button className={styles.searchButton}>SEARCH</button>
 
-            {/* Account icon */}
+            {/* ACCOUNT ICON */}
+
+
             <div
               className={`${styles.account} ${
                 isChevronDown ? "" : styles.upHover
@@ -84,33 +88,39 @@ function Navbar() {
                 icon={isChevronDown ? faChevronDown : faChevronUp}
                 className={styles.faChevronDown}
               />
+
+
               {!isChevronDown && (
                 <div className={styles.additionalItems}>
                   {/* Use Link component for navigation */}
                   <a href="/signIn" className={styles.signIn}>
                     SIGN IN
                   </a>
-                  <Link to="/myAccount" className={styles.myAccount}>
+                  <a to="/myAccount" className={styles.myAccount}>
                     <FontAwesomeIcon
                       icon={faUserLarge}
                       className={styles.faUserLargeA}
                     />
                     My Account
-                  </Link>
-                  <Link to="/orders" className={styles.myAccount}>
+                  </a>
+                  <a to="/orders" className={styles.myAccount}>
                     <FontAwesomeIcon icon={faBox} className={styles.faBox} />
                     Orders
-                  </Link>
-                  <Link to="/saved" className={styles.myAccount}>
+                  </a>
+                  <a to="/saved" className={styles.myAccount}>
                     <FontAwesomeIcon
                       icon={faHeart}
                       className={styles.faHeart}
                     />
                     Saved Items
-                  </Link>
+                  </a>
                 </div>
               )}
             </div>
+
+
+
+            {/* HELP BUTTON */}
             <div
               className={`${styles.helpContainer} ${
                 isDropdownOpen ? "" : styles.isDropdownOpen
@@ -145,6 +155,9 @@ function Navbar() {
                 </div>
               )}
             </div>
+
+
+            {/* CART BUTTON */}
 
             <div className={styles.cart}>
               <FontAwesomeIcon icon={faCartShopping} />
