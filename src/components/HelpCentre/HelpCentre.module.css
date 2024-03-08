@@ -1,0 +1,60 @@
+.container{
+    /* background-color: blue; */
+    border: none;
+}
+
+/* .helpCentreContainer{
+    background-color: green;
+} */
+
+.helpCentre{
+    background-color: #ffd093;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 0%;
+}
+
+.helpCentre h4{
+    /* background-color: red; */
+    font-size: 18px;
+    
+}
+
+.helpCentre h3{
+    /* background-color: yellow; */
+    margin-top: 0%;
+    font-size: 22px;
+}
+
+
+
+.help{
+    background-color: red;
+    display: flex;
+ 
+  
+}
+
+.orders{
+    background-color: #ffff;
+    height: 100px;
+    display: flex; 
+    margin: 10px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.orders img{
+    /* height: 50px; */
+    width: auto;
+}
+
+.orders h3{
+    /* background-color: green; */
+    width: 60%;
+    padding: 0px;
+    margin: 0px;
+}
