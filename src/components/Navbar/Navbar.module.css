@@ -223,6 +223,7 @@
 .upHover:hover{
     background-color: #fff;
     color: black;
+    white-space: nowrap;
 }
 
 /* .additionalItems{

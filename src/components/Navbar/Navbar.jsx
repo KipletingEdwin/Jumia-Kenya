@@ -6,7 +6,7 @@ import freeDelivery1 from "../../assets/nav/freedelivery1.gif";
 import jumiakenya from "../../assets/nav/jumia.png";
 import jumiaIcon from "../../assets/nav/jumiaIcon.png";
 import pay from "../../assets/nav/pay.png";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   // State to manage the visibility of additional account items
@@ -93,27 +93,27 @@ function Navbar() {
               {!isChevronDown && (
                 <div className={styles.additionalItems}>
                   {/* Use Link component for navigation */}
-                  <a href="/signIn" className={styles.signIn}>
+                  <Link to="/signIn" className={styles.signIn}>
                     SIGN IN
-                  </a>
-                  <a to="/myAccount" className={styles.myAccount}>
+                  </Link>
+                  <Link to="/signIn" className={styles.myAccount}>
                     <FontAwesomeIcon
                       icon={faUserLarge}
                       className={styles.faUserLargeA}
                     />
                     My Account
-                  </a>
-                  <a to="/orders" className={styles.myAccount}>
+                  </Link>
+                  <Link to="/signIn" className={styles.myAccount}>
                     <FontAwesomeIcon icon={faBox} className={styles.faBox} />
                     Orders
-                  </a>
-                  <a to="/saved" className={styles.myAccount}>
+                  </Link>
+                  <Link to="/signIn" className={styles.myAccount}>
                     <FontAwesomeIcon
                       icon={faHeart}
                       className={styles.faHeart}
                     />
                     Saved Items
-                  </a>
+                  </Link>
                 </div>
               )}
             </div>
