@@ -1,12 +1,12 @@
 .container{
-    background-color: green;
+    /* background-color: green; */
     border: none;
     padding: 0%;
     margin: 0%;
 }
 
 .container h6{
-    background-color: yellow;
+    /* background-color: yellow; */
     padding: 0px;
     font-size: 22px;
     height: 30px;
@@ -14,7 +14,7 @@
 }
 
 .placeOrder{
-    background-color: red;
+    /* background-color: red; */
     max-height: 530px;
     margin: 2%;
     border-radius: 5px;
@@ -23,14 +23,14 @@
 
 
 .container p{
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 30px;
     margin: 0px;
     font-size: 20px;
 }
 
 .placeOrder iframe{
-    background-color: blue;
+    /* background-color: blue; */
     margin-top: 10px;
     border-radius: 5px;
     width: 560px;
@@ -73,7 +73,7 @@
 
 
 .addProduct{
-    background-color: blue;
+    /* background-color: blue; */
     height: 1800px;
     margin: 0%;
 }
@@ -100,17 +100,17 @@
 /* COMPLETE */
 
 .complete{
-    background-color: orange;
+    /* background-color: orange; */
     padding: 0px;
 }
 
 .complete ul{
-    background-color: blue;
+    /* background-color: blue; */
     max-height: 70px;
 }
 
 .complete ul li{
-    background-color: hotpink;
+    /* background-color: hotpink; */
     max-height: 30px;
     font-size: 20px;
 }
@@ -125,13 +125,13 @@
 /* CONFIRM */
 
 .confirm{
-    background-color: cyan;
+    /* background-color: cyan; */
     height: 1400px;
     margin: 3% 0%;
 }
 
 .confirm ul{
-    background-color: brown;
+    /* background-color: brown; */
     max-height: 40px;
 }
 
@@ -139,7 +139,7 @@
     font-size: 20px;
 }
 .ImagesContainer{
-    background-color: green;
+    /* background-color: green; */
     margin: 0%;
     padding: 0%;
     /* display: flex; */
@@ -161,17 +161,17 @@
 /* TRACK ORDER */
 
 .trackOrder{
-    background-color: red;
+    /* background-color: red; */
     padding: 1%;
     height: 600px;
 }
 
 .trackOrder ul{
-    background-color: darkmagenta;
+    /* background-color: darkmagenta; */
     max-height: 50px;
 }
 .trackOrder ul li{
-    background-color: lightseagreen;
+    /* background-color: lightseagreen; */
     padding: 0px;
     margin: 0px;
     max-height: 25px;
@@ -186,14 +186,15 @@
 /* DESCRIPTION */
 
 .description{
-    background-color: yellow;
+    /* background-color: yellow; */
     margin-top: 1%;
+    max-height: 100px;
+    padding: 1%;
 }
 
 .boldedDescription{
     font-weight: 700;
     background-color: transparent;
-    display: block;
 }
 
 .description p{

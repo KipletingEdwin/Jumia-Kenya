@@ -13,6 +13,7 @@ import SignIn from "./components/SignIn/SignIn.jsx";
 import LandingPage from "../LandingPage.jsx";
 import HelpCentre from "./components/HelpCentre/HelpCentre.jsx";
 import PlaceOrder from "./components/PlaceOrder/PlaceOrder.jsx";
+import TrackOrder from "./components/TrackOrder/TrackOrder.jsx";
 
 
 
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/placeOrder",
         element: <PlaceOrder/>
+      },
+      {
+        path: "/trackOrder",
+        element: <TrackOrder/>
       }
     ]
   },
