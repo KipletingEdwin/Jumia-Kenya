@@ -1,0 +1,100 @@
+
+
+[
+    {
+        "title": "Payments",
+        "iconSource": "CreditCard",
+        "content": [
+            {
+                "topic": "What payment methods are accepted on Jumia?",
+                "subtopic": "We accept variety of payment methods including:",
+                "answers": [
+                    {
+                        "1": "Pay on Delivery allows for payment via JumiaPay on delivery by card or mobile money(Mpesa,Airtel Money) upon delivery instead of cash. ",
+                        "2": "JumiaPay accepts payment through Mpesa, Airtel Money, Mastercard, or Visa cards. ",
+                        "3": "Vouchers: Pay using a voucher code when placing your order."
+                    }
+                ]
+            },
+            {
+                "topic": "How secure is my payment information on Jumia?",
+                "answers": " Jumia prioritizes customer payment security with encryption, and secure servers. Regular monitoring and auditing are also performed to maintain a secure environment for transactions."
+            },
+            {
+                "topic": "What do I do if my payment is declined?",
+                "answers": "If your payment is declined, you can check the following to resolve the issue: ",
+                "answer1": [
+                    {
+                        "For Mpesa": [
+                            {
+                                "1": "Check if you have sufficient funds.",
+                                "2": "Ensure your phone number is not linked to another account on jumia.",
+                                "3": "Ensure you have entered the correct pin.  "
+                            }
+                        ],
+                        "For Card": [
+                            {
+                                "1": "Check the spelling and billing information you entered for accuracy.",
+                                "2": "Ensure that your credit card has sufficient funds or that your bank account has enough balance. ",
+                                "3": "Check if there are any restrictions on your card, such as a daily spending limit. ",
+                                "4": "Make sure your card has not expired. "
+
+                            }
+                        ],
+                        "Comment": "If you've checked the above and your payment is still declined, you can contact Jumia customer service for assistance. They can be reached through the Live Chat or by calling Jumia customer service through  0711011011  for assistance. ",
+                        "Note": "Note: It is recommended to keep the details of the error message that appears during the declined transaction to provide to Jumia customer service for a faster resolution. "
+                    }
+                ]
+            },
+            {
+                "topic": "Can I pay cash on delivery for my orders?",
+                "answers": "You can pay for your jumia orders upon delivery using Jumia pay, card,visa card or mastercard. "
+            },
+            { "Question": "What should I do if I have been charged twice for the same order?",
+                "answer1": "If you have been charged twice for the same order, you can contact Jumia customer service for assistance in resolving the issue. They can be reached through the Live Chat or by calling Jumia customer service through  0711011011  for assistance. ",
+                "answer2": "Please provide the following information to Jumia customer service when reporting a double charge: ",
+                "subAnswers": [
+                    {
+                        "1": "Your name and email address used to place the order.",
+                        "2": "Order number and date of purchase.",
+                        "3": "Details of the double charge (amount, date, and transaction number). "
+
+                    }
+                ],
+                "resolve": " Jumia customer service will assist you in resolving the issue and arranging for a refund if applicable."
+            }
+
+        ]
+    },
+    {
+        "title": "Vouchers",
+        "iconSource": "LocalAtm"
+    },
+    {
+        "title": "Delivery",
+        "iconSource": "LocalShipping"
+    },
+    {
+        "title": "Returns & Refunds",
+        "iconSource": "Rotate90DegreesCcw"
+    },
+    {
+        "title": "Products",
+        "iconSource": "EventNoteOutlined"
+    },
+    {
+        "title": "Account",
+        "iconSource": "PermIdentityOutlined"
+    },
+    {
+        "title": "Sell on Jumia",
+        "iconSource": "Send"
+    },
+    {
+        "title": "Jumia Express",
+        "iconSource": "CreditScore"
+    },
+    {        "title": "Jumia Global",
+        "iconSource": "Flight"
+    }
+]

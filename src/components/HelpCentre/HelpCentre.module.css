@@ -34,6 +34,8 @@
 .help{
     background-color: red;
     display: flex;
+    justify-content: space-evenly;
+    height: 150px;
  
   
 }
@@ -57,4 +59,40 @@
     width: 60%;
     padding: 0px;
     margin: 0px;
+}
+
+.paymentSection{
+    background-color: yellow;
+    width: 250px;
+}
+
+.payment{
+    /* background-color: green; */
+    height: 50px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border: 1px solid black;
+}
+
+.payment h3{
+    /* background-color: blue; */
+    margin: 0px;
+    padding-top: 14px;
+    padding-left: 8px;
+    width: 80%;
+}
+
+.KeyboardArrowRightOutlined{
+    display: flex;
+    flex-direction: row;
+    /* background-color: #ffd093; */
+    /* width: 60%; */
+    justify-content: flex-end;
+}
+
+.myIcon{
+    /* background-color: cyan; */
+    margin-top: 49%;
 }

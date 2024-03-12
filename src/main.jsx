@@ -12,6 +12,7 @@ import "@fontsource/outfit";
 import SignIn from "./components/SignIn/SignIn.jsx";
 import LandingPage from "../LandingPage.jsx";
 import HelpCentre from "./components/HelpCentre/HelpCentre.jsx";
+import PlaceOrder from "./components/PlaceOrder/PlaceOrder.jsx";
 
 
 
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/helpCenter",
         element: <HelpCentre/>
+      },
+      {
+        path: "/placeOrder",
+        element: <PlaceOrder/>
       }
     ]
   },
