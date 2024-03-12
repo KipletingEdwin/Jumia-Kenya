@@ -15,5 +15,6 @@ module.exports = {
   plugins: [],
   rules: {
     // You can add any additional rules or overrides here
+    "react/no-unescaped-entities": 0, // Disable the react/no-unescaped-entities rule
   },
 };
