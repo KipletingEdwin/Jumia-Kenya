@@ -144,7 +144,7 @@ function Navbar() {
                   <a href="/trackOrder"> Track an Order</a>
                   <a href="/orderCancellation">Order Cancellation</a>
                   <a href="/returnsRefunds"> Returns & Refunds</a>
-                  <a href="/payment"> Payment & Jumia Account</a>
+                  <a href="/trackOrder"> Payment & Jumia Account</a>
                   <button>
                     <FontAwesomeIcon
                       icon={faMessage}

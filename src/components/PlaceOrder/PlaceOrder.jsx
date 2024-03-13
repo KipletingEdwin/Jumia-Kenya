@@ -20,8 +20,6 @@ function PlaceOrder() {
         <p> Step 4: Confirm and pay</p>
         <p> Step 5: Track your order</p>
         <iframe
-        //   width="560"
-        //   height="314"
           src="https://www.youtube.com/embed/XyUwkOvzqCA"
           title="How to place an order"
           allowFullScreen
