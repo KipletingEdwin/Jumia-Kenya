@@ -1,0 +1,210 @@
+.container{
+    background-color: aqua;
+}
+
+.jumiaContainer{
+    background-color: #313133;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftContainer{
+    width: 30%;
+    /* background-color: yellow; */
+}
+
+.leftContainer img{
+    /* background-color: red; */
+    height: 70px;
+    width: auto;
+    padding: 10%;
+}
+
+.new{
+    width: 40%;
+    /* background-color: green; */
+    padding: 5px;
+    color: #fff;
+}
+
+.jumiaDescription{
+    /* background-color: hotpink; */
+    margin: 0%;
+    padding: 0%;
+}
+
+.jumiaDescription h6{
+    font-size: 14px;
+    font-weight: 600;
+    /* background-color: red; */
+}
+
+.jumiaDescription p{
+    font-size: 14px;
+    /* background-color: red; */
+    color: #F1F1F2;
+}
+
+.mailContainer{
+    /* background-color: blue; */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.myInput{
+    color: #a3a3a6;
+    background-color: #fff;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.mailContainer button{
+    color: #fff;
+    background-color: #313133;
+    border: 0.5px solid #fff;
+    padding: 16px 24px;
+    margin: 10px;
+    border-radius: 3px;
+}
+
+.mailContainer button:hover{
+    color: #ffba00;
+    border: 0.5px solid #ffba00;
+}
+
+.emailIcon{
+    color: #a3a3a6;
+}
+
+.radioType{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+}
+
+/* .checkbox{
+    background-color: red;
+} */
+
+.radioType input{
+    background-color: yellow;
+    margin: 5px;
+}
+
+.privacy{
+    /* background-color: darkslateblue; */
+    padding: 10px;
+}
+
+.privacy p{
+    color: #A3A3A6;
+}
+.privacy a{
+    color: #F68B1E;
+}
+
+
+.download{
+    width: 30%;
+    /* display: flex;
+    flex-direction: row; */
+    /* background-color: cornflowerblue; */
+}
+
+.firstOne{
+    /* background-color: darkblue; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.iconImageContainer{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.firstOne img{
+    height: 50px;
+}
+
+.description{
+    width: 85%;
+    /* background-color: yellow; */
+    color: #fff;
+    padding: 10px;
+}
+
+.description h6{
+    font-weight: 600;
+    /* background-color: red; */
+    font-size: 14px;
+    line-height: 0.8;
+}
+
+.description p{
+    /* background-color: red; */
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.appStore{
+    /* background-color: mediumblue; */
+    display: flex;
+}
+
+.appStore img{
+    padding: 5px;
+    height: 40px;
+   
+}
+
+
+/* HELP CONTAINER */
+
+.helpContainer{
+    background-color: #535357;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.helpContainer h6{
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 14%;
+}
+
+.helpContainer ul li{
+    list-style: none;
+     padding-top: 6px;
+}
+
+.helpContainer ul li a{
+    color: #fff;
+    text-decoration: none;
+    /* padding-top: 10px; */
+}
+
+.helpContainer ul li a:hover{
+    text-decoration: underline;
+}
+
+/* .jumiaInternationalContainer{
+    background-color: blue;
+} */
+
+
+.jumiaInternational{
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    padding-left: 0px;
+}
+
+
+/* .firstCountries{
+    background-color: green;
+} */

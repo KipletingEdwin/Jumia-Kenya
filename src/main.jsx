@@ -16,6 +16,7 @@ import PlaceOrder from "./components/PlaceOrder/PlaceOrder.jsx";
 import TrackOrder from "./components/TrackOrder/TrackOrder.jsx";
 import OrderCancellation from "./components/OrderCancellation/OrderCancellation.jsx";
 import Returns from "./components/Returns/Returns.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 
 
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "/returnsRefunds",
         element: <Returns/>
+      },
+      {
+        path: "/footer",
+        element: <Footer/>
       }
     ]
   },

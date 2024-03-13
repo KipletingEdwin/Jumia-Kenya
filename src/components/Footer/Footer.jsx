@@ -1,14 +1,20 @@
 import React from 'react'
-import styles from './Footer,module.css';
+import styles from './Footer.module.css';
 import appstore from '../../assets/footer/appstore.png';
-import playstore from '../../assets/footer/playstore.png';
-import {FacebookIcon, InstagramIcon,  YouTubeIcon } from '@mui/icons-material/Facebook';
+import playstore from '../../assets/footer/goggleplay.png';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import EmailIcon from '@mui/icons-material/Email';
+import { TextField } from '@mui/material';
+
 import jumiaIcon from '../../assets/footer/jumiaIcon.png';
 import hand from '../../assets/footer/hand.png';
 import jumiaPay from '../../assets/footer/jumiaPay.png';
 import visa from '../../assets/footer/visa.png';
 import star from '../../assets/footer/star.png';
 import mastercard from '../../assets/footer/mastercard.png';
+
 
 
 function Footer() {
@@ -20,36 +26,53 @@ function Footer() {
         </div>
 
         <div className={styles.new}>
+            <div className={styles.jumiaDescription}>
             <h6>NEW TO JUMIA?</h6>
             <p> Subscribe to our newsletter to get updates on our latest offers! </p>
+            </div>
+    
             <div className={styles.mailContainer}>
-            <input type='Email' name='Email' placeholder='Enter E-Mail Address'/>
+            <TextField
+            className={styles.myInput}
+                    type='email'
+                    name='email'
+                    placeholder='Enter E-Mail Address'
+                    InputProps={{
+                        startAdornment: (
+                            <EmailIcon className={styles.emailIcon} />
+                        ),
+                    }}
+                />
             <button>MALE</button>
             <button>FEMALE</button>
             </div>
             <div className={styles.radioType}>
-                <input type="checkbox" name='checkbox' />
-                <div>
+                <input type="checkbox" name='checkbox' className={styles.checkbox}/>
+                <div className={styles.privacy}>
                     <p> I agree to Jumia’s Privacy and Cookie Policy. You can unsubscribe from newsletters at any time. </p>
                     <a href='https://www.jumia.co.ke/sp-privacy/'> I accept the Legal Terms </a>
                 </div>
-
             </div>
         </div>
+
+
 
         <div className={styles.download}>
             <div className={styles.firstOne}>
-                <img src={star} alt='jumia' />
-            </div>
+               <div className={styles.iconImageContainer}>
+               <img src={star} alt='jumia' />
+               </div>
             <div className={styles.description}>
                 <h6> DOWNLOAD JUMIA FREE APP </h6>
-                <p> DOWNLOAD JUMIA FREE APP </p>
+                <p> Get access to exclusive offers! </p>
             </div>
-        </div>
-        <div className={styles.appStore}>
+            </div>
+            <div className={styles.appStore}>
             <a href='https://itunes.apple.com/us/app/jumia-online-shopping/id925015459?mt=8'><img src={appstore} alt='apstore'/></a>
             <a href='https://play.google.com/store/apps/details?id=com.jumia.android&referrer=adjust_reftag%3Dc05WiGKiLDtaY'><img src={playstore} alt='playstore'/></a>
         </div>
+        </div>
+       
         </div>
 
         {/* HELP CONTAINER */}
@@ -108,6 +131,13 @@ function Footer() {
                 </ul>
             </div>
 
+
+
+
+
+
+            <div className={styles.jumiaInternationalContainer}>
+            <h6> JUMIA INTERNATIONAL </h6>
             <div className={styles.jumiaInternational}>
                 <div className={styles.firstCountries}>
                     <ul>
@@ -128,6 +158,11 @@ function Footer() {
                     </ul>
 
                 </div>
+             </div>
+             </div>
+
+
+
 
             </div>
 
@@ -235,7 +270,7 @@ function Footer() {
 
             </div>
 
-        </div>
+       
 
     </section>
   )
