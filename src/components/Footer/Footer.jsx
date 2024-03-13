@@ -2,13 +2,21 @@ import React from 'react'
 import styles from './Footer,module.css';
 import appstore from '../../assets/footer/appstore.png';
 import playstore from '../../assets/footer/playstore.png';
+import {FacebookIcon, InstagramIcon,  YouTubeIcon } from '@mui/icons-material/Facebook';
+import jumiaIcon from '../../assets/footer/jumiaIcon.png';
+import hand from '../../assets/footer/hand.png';
+import jumiaPay from '../../assets/footer/jumiaPay.png';
+import visa from '../../assets/footer/visa.png';
+import star from '../../assets/footer/star.png';
+import mastercard from '../../assets/footer/mastercard.png';
+
 
 function Footer() {
   return (
     <section className={styles.container}>
       <div className={styles.jumiaContainer}>
         <div className={styles.leftContainer}>
-            <img src={} alt='jumia' />
+            <img src={jumiaIcon} alt='jumia' />
         </div>
 
         <div className={styles.new}>
@@ -31,7 +39,7 @@ function Footer() {
 
         <div className={styles.download}>
             <div className={styles.firstOne}>
-                <img src={} alt='jumia' />
+                <img src={star} alt='jumia' />
             </div>
             <div className={styles.description}>
                 <h6> DOWNLOAD JUMIA FREE APP </h6>
@@ -76,49 +84,153 @@ function Footer() {
             <div className={styles.aboutJumia}>
                 <h6> ABOUT JUMIA </h6>
                 <ul>
-                    <li>  About Us</li>
-                    <li>  Returns and Refunds Policy </li>
-                    <li>  Jumia Careers </li>
-                    <li>  Jumia Express </li>
-                    <li>  Terms and Conditions </li>
-                    <li>  Store Credit Terms and Conditions </li>
-                    <li>  Privacy Notice </li>
-                    <li>  Cookies Notice </li>
-                    <li>  Flash Sales </li>
-                    <li>  Jumia Global </li>
+                    <li> <a href='/'> About Us</a></li>
+                    <li><a href='https://www.jumia.co.ke/sp-returns-and-refunds-policy/'>  Returns and Refunds Policy </a></li>
+                    <li> <a href='https://www.jumia.co.ke/careers/'> Jumia Careers </a></li>
+                    <li> <a href='https://www.jumia.co.ke/sp-jumia-express/'> Jumia Express </a></li>
+                    <li><a href='https://www.jumia.co.ke/terms-and-conditions/'>  Terms and Conditions </a></li>
+                    <li> <a href='https://www.jumia.co.ke/sp-store-credit-TCs/'> Store Credit Terms and Conditions</a> </li>
+                    <li> <a href='https://www.jumia.co.ke/privacy/'> Privacy Notice </a></li>
+                    <li><a href='https://www.jumia.co.ke/sp-cookie-notice/'>  Cookies Notice </a></li>
+                    <li> <a href='https://www.jumia.co.ke/flash-sales/'> Flash Sales</a> </li>
+                    <li> <a href='https://www.jumia.co.ke/mlp-jumia-global/'> Jumia Global </a></li>
                 </ul>
             </div>
 
             <div className={styles.makeMoney}>
                 <h6> MAKE MONEY WITH JUMIA </h6>
                 <ul>
-                    <li>  Sell on Jumia </li>
-                    <li>  Vendor Hub </li>
-                    <li>  Become a Sales Consultant </li>
-                    <li>  Become a Logistics Service Partner </li>
-                    <li>  Jumia City Partner Program </li>
+                    <li><a href='https://www.jumia.co.ke/sp-sell/'>  Sell on Jumia </a></li>
+                    <li> <a href='https://vendorhub.jumia.co.ke/'> Vendor Hub</a> </li>
+                    <li><a href='https://www.jumia.co.ke/mlp-jforce/'>  Become a Sales Consultant </a></li>
+                    <li><a href='https://jumia_form.formstack.com/forms/3pl_interest_registration_en'>  Become a Logistics Service Partner</a> </li>
+                    <li><a href='https://forms.gle/WmYEPeQJbqgQD3Da8'>  Jumia City Partner Program </a></li>
                 </ul>
             </div>
 
             <div className={styles.jumiaInternational}>
                 <div className={styles.firstCountries}>
                     <ul>
-                        <li> Algeria </li>
-                        <li> Ivory Coast </li>
-                        <li> Egypt </li>
-                        <li> Ghana </li>
-                        <li> Morocco </li>
+                        <li><a href='https://www.jumia.com.dz/'> Algeria </a></li>
+                        <li><a href='https://www.jumia.ci/'> Ivory Coast </a></li>
+                        <li><a href='https://www.jumia.com.eg/'>Egypt</a></li>
+                        <li><a href='https://www.jumia.com.gh/'> Ghana </a></li>
+                        <li><a href='https://www.jumia.ma/'> Morocco </a></li>
                     </ul>
                 </div>
                 <div className={styles.secondCountries}>
                     <ul>
-                        <li>  Nigeria  </li>
-                        <li> Senegal  </li>
-                        <li>  Tunisia  </li>
-                        <li>  Uganda </li>
-                        <li>  Zando </li>
+                        <li> <a href='https://www.jumia.com.ng/'> Nigeria </a> </li>
+                        <li><a href='https://www.jumia.sn/'> Senegal  </a></li>
+                        <li> <a href='https://www.jumia.com.tn/'> Tunisia  </a></li>
+                        <li> <a href='https://www.jumia.ug/'> Uganda</a> </li>
+                        <li><a href='https://www.zando.co.za/'>  Zando </a></li>
                     </ul>
 
+                </div>
+
+            </div>
+
+            {/* JOIN US NOW */}
+
+            <div className={styles.joinContainer}>
+                <div className={styles.joinUsOn}>
+                    <h6> JOIN US ON </h6>
+                    <div className={styles.joinImages}>
+                        <FacebookIcon/>
+                        <InstagramIcon />
+                        <YouTubeIcon />
+                    </div>
+                </div>
+
+                <div className={styles.paymentMethods}>
+                   <img src={hand} alt='pay-on-delivery'/>
+                   <img src={visa} alt='visa'/>
+                   <img src={mastercard} alt='mastercard'/>
+                   <img src={jumiaPay} alt='jumia-pay'/>
+                </div>
+            </div>
+
+            <div className={styles.linksContainer}>
+                <div className={styles.first}>
+                    <ul>
+                        <li><a href='https://www.jumia.co.ke/adidas/'>   Adidas   </a></li>
+                        <li><a href='https://www.jumia.co.ke/ailyons/'>   AILYONS  </a></li>
+                        <li><a href='https://www.jumia.co.ke/apple/'>   Apple   </a></li>
+                        <li><a href='https://www.jumia.co.ke/brand-asus/'>   Asus   </a></li>
+                        <li><a href='https://www.jumia.co.ke/bruhm/'>   Bruhm  </a></li>
+                        <li><a href='https://www.jumia.co.ke/canon/'>   Canon  </a></li>
+                    </ul>
+                </div>
+
+                <div className={styles.second}>
+                    <ul>
+                        <li><a href='https://www.jumia.co.ke/cantu/'>   Cantu  </a></li>
+                        <li><a href='https://www.jumia.co.ke/coke/'>   Coke  </a></li>
+                        <li><a href='https://www.jumia.co.ke/dell/'>   DELL  </a></li>
+                        <li><a href='https://www.jumia.co.ke/dove1/'>   Dove  </a></li>
+                        <li><a href='https://www.jumia.co.ke/dr-rashel/'>   Dr. Rashel  </a></li>
+                    </ul>
+                </div>
+
+                <div className={styles.third}>
+                    <ul>
+                        <li><a href='https://www.jumia.co.ke/epson/'>   Epson  </a></li>
+                        <li><a href='https://www.jumia.co.ke/garnier/'>   Garnier  </a></li>
+                        <li><a href='https://www.jumia.co.ke/hisense/'>   Hisense  </a></li>
+                        <li><a href='https://www.jumia.co.ke/hp/'>   HP  </a></li>
+                        <li><a href='https://www.jumia.co.ke/infinix/'>   Infinix  </a></li>
+                    </ul>
+                </div>
+
+                <div className={styles.fouth}>
+                    <ul>
+                        <li><a href='https://www.jumia.co.ke/itel/'>   Itel  </a></li>
+                        <li><a href='https://www.jumia.co.ke/jameson/'>   Jameson  </a></li>
+                        <li><a href='https://www.jumia.co.ke/loreal-paris/'>   L'Oréal Paris </a></li>
+                        <li><a href='https://www.jumia.co.ke/lenovo/'>   Lenovo  </a></li>
+                        <li><a href='https://www.jumia.co.ke/logitech/'>   Logitech  </a></li>
+                    </ul>
+                </div>
+
+                <div className={styles.fifth}>
+                    <ul>
+                        <li><a href='https://www.jumia.co.ke/maybelline/'>   Maybelline  </a></li>
+                        <li><a href='https://www.jumia.co.ke/brand-mika/'>  Mika </a></li>
+                        <li><a href='https://www.jumia.co.ke/nivea/'>   NIVEA </a></li>
+                        <li><a href='https://www.jumia.co.ke/nunix/'>   Nunix  </a></li>
+                        <li><a href='https://www.jumia.co.ke/oppo/'>   Oppo  </a></li>
+                    </ul>
+                </div>
+
+                <div className={styles.sixth}>
+                    <ul>
+                        <li><a href='https://www.jumia.co.ke/ramtons/'>   Ramtons  </a></li>
+                        <li><a href='https://www.jumia.co.ke/roch/'>  Roch </a></li>
+                        <li><a href='https://www.jumia.co.ke/samsung/'>   Samsung </a></li>
+                        <li><a href='https://www.jumia.co.ke/sandisk/'>   Sandisk  </a></li>
+                        <li><a href='https://www.jumia.co.ke/skyworth/'>   Skyworth  </a></li>
+                    </ul>
+                </div>
+
+                <div className={styles.seventh}>
+                    <ul>
+                        <li><a href='https://www.jumia.co.ke/sony/'>   Sony </a></li>
+                        <li><a href='https://www.jumia.co.ke/tcl/'>  TCL </a></li>
+                        <li><a href='https://www.jumia.co.ke/tecno/'>   Tecno </a></li>
+                        <li><a href='https://www.jumia.co.ke/transcend/'>   Transcend </a></li>
+                        <li><a href='https://www.jumia.co.ke/tusker/'>   Tusker  </a></li>
+                    </ul>
+                </div>
+
+                <div className={styles.seventh}>
+                    <ul>
+                        <li><a href='https://www.jumia.co.ke/usn/'>   USN </a></li>
+                        <li><a href='https://www.jumia.co.ke/vision-plus/'>  Vision Plus </a></li>
+                        <li><a href='https://www.jumia.co.ke/vitron/'>   Vitron </a></li>
+                        <li><a href='https://www.jumia.co.ke/von/'>   VON </a></li>
+                        <li><a href='https://www.jumia.co.ke/xiaomi/'>   XIAOMI  </a></li>
+                    </ul>
                 </div>
 
             </div>
