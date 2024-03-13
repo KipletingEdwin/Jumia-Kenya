@@ -172,17 +172,20 @@ function Footer() {
                 <div className={styles.joinUsOn}>
                     <h6> JOIN US ON </h6>
                     <div className={styles.joinImages}>
-                        <FacebookIcon/>
-                        <InstagramIcon />
-                        <YouTubeIcon />
+                        <FacebookIcon className={styles.social} />
+                        <InstagramIcon className={styles.social} />
+                        <YouTubeIcon className={styles.social} />
                     </div>
                 </div>
 
                 <div className={styles.paymentMethods}>
+                <h6> PAYMENT METHODS </h6>
+                <div className={styles.payment}>
                    <img src={hand} alt='pay-on-delivery'/>
                    <img src={visa} alt='visa'/>
                    <img src={mastercard} alt='mastercard'/>
                    <img src={jumiaPay} alt='jumia-pay'/>
+                </div>
                 </div>
             </div>
 
